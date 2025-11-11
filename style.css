@@ -3,50 +3,61 @@
    ========================= */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #1b1b1b;
+  line-height: 1.65;
+  background: linear-gradient(135deg, #1b1b1b 0%, #121212 100%);
   color: #f0f0f0;
   margin: 0;
   padding: 20px;
+  transition: background 0.3s ease;
 }
 
 a {
   color: #ffcc33;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #ffd84d;
 }
 
 /* =========================
    Headings
    ========================= */
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif; /* Slightly fantasy-inspired font */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 h1 {
   color: #ffcc33;
-  font-size: 2.5em;
+  font-size: 2.8em;
   margin-top: 0.5em;
   border-bottom: 2px solid #444;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.4em;
+  text-shadow: 1px 1px 3px #000;
 }
 
 h2 {
   color: #ffcc33;
-  font-size: 2em;
+  font-size: 2.2em;
   margin-top: 1.5em;
   border-bottom: 1px solid #444;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.3em;
+  text-shadow: 1px 1px 2px #000;
 }
 
 h3 {
   color: #f4e285;
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin-top: 1.2em;
 }
 
 h4 {
   color: #f4e285;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 /* =========================
@@ -54,17 +65,18 @@ h4 {
    ========================= */
 p {
   margin: 1em 0;
+  line-height: 1.7;
 }
 
 blockquote {
   border-left: 4px solid #ffcc33;
-  padding-left: 1em;
-  margin: 1em 0;
+  padding: 1em 1em 1em 1em;
+  margin: 1.2em 0;
   font-style: italic;
   color: #ccc;
-  background-color: #222;
-  padding: 1em;
-  border-radius: 5px;
+  background: rgba(34, 34, 34, 0.85);
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px #00000050;
 }
 
 /* =========================
@@ -76,7 +88,8 @@ ul {
 }
 
 li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
+  line-height: 1.5;
 }
 
 /* =========================
@@ -85,18 +98,21 @@ li {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1em 0;
+  margin: 1.5em 0;
   background-color: #1f1f1f;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 th, td {
   border: 1px solid #555;
-  padding: 10px;
+  padding: 12px;
   text-align: left;
+  transition: background 0.3s ease;
 }
 
 th {
-  background-color: #333;
+  background: linear-gradient(90deg, #333 0%, #444 100%);
   color: #ffcc33;
 }
 
@@ -105,34 +121,44 @@ td {
   color: #f0f0f0;
 }
 
+tr:hover td {
+  background-color: #2a2a2a;
+}
+
 /* =========================
    Horizontal Rules
    ========================= */
 hr {
-  border: 1px solid #444;
+  border: 0;
+  height: 1px;
+  background: #444;
   margin: 2em 0;
 }
 
 /* =========================
-   Buttons / Links for RPG Flavor
+   Buttons / RPG Flavor
    ========================= */
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   margin: 1em 0;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 700;
   color: #1b1b1b;
-  background-color: #ffcc33;
-  border: none;
-  border-radius: 5px;
+  background: linear-gradient(145deg, #ffcc33 0%, #e6b800 100%);
+  border: 2px solid #ffd84d;
+  border-radius: 8px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
 }
 
 .button:hover {
-  background-color: #e6b800;
+  background: linear-gradient(145deg, #ffd84d 0%, #ffb700 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.6);
 }
 
 /* =========================
@@ -140,13 +166,13 @@ hr {
    ========================= */
 @media screen and (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 12px;
   }
   h1 {
     font-size: 2em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
   h3 {
     font-size: 1.2em;
