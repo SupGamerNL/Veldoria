@@ -139,7 +139,7 @@ Please credit appropriately if reusing any part of the project.
 ## 🌠 Follow Development
 
 Stay updated with development progress, lore expansions, and new content:
-- **Website:** [supgamernl.github.io/Veldoria](https://supgamernl.github.io/Veldoria) *(Coming Soon)*  
+- **Website:** [supgamernl.github.io/Veldoria](https://supgamernl.github.io/Veldoria) 
 - **Developer:** SupGamer NL  
 - **Contact:** *via GitHub Discussions or Issues tab*
 
