@@ -1,69 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="assets/images/icon.ico">
-<title>The Story of Veldoria</title>
-<style>
-  body { font-family: 'Trebuchet MS', sans-serif; background: #111; color: #f0f0f0; line-height: 1.6; }
-  header { text-align: center; padding: 2em; background: #222; }
-  h1 { color: #ffcc33; }
-  h2 { color: #ff9966; }
-  section { padding: 2em; border-bottom: 1px solid #333; }
-  a.button { display: inline-block; padding: 0.5em 1em; margin: 1em 0; background: #ffcc33; color: #111; text-decoration: none; border-radius: 5px; }
-</style>
+  <title>The Story of Veldoria</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Veldoria – an early-stage RPG Maker MZ project exploring magic, memory, and destiny through Morgan and Kaelen's journey.">
 </head>
 <body>
+  <header>
+    <h1>The Story of Veldoria</h1>
+    <p class="tagline">Memory. Magic. Destiny.</p>
+    <a href="#play" class="button">Start Your Journey</a>
+  </header>
 
-<header>
-  <h1>The Story of Veldoria</h1>
-  <p>An immersive RPG adventure where memory, magic, and destiny collide.</p>
-  <a href="#play" class="button">Start Your Journey</a>
-</header>
+  <main>
+    <!-- DEVELOPMENT STATUS -->
+    <section id="dev-status">
+      <h2>⚙️ Development Status</h2>
+      <p>
+        <strong>Veldoria</strong> is currently in a <em>very early stage of development</em>.  
+        Most maps, systems, and story mechanics are still being designed and tested.
+      </p>
+      <p>
+        The player currently follows <strong>Morgan</strong>, whose memories were tampered with by an unknown entity.  
+        He searches for lost memories, including those of his best friend, <strong>Kaelen</strong>, the destined hero of Veldoria’s central city.  
+        Maps, interiors, and key story points are slowly being built using RPG Maker MZ’s default RTP.
+      </p>
+      <p class="note">
+        Current state: <strong>Alpha Pre-Content Build (v0.0.1)</strong>  
+        <br>Planned progression: Alpha → Beta → Early Access → Full Release
+      </p>
+    </section>
 
-<section id="world">
-  <h2>🌍 The World</h2>
-  <p>Veldoria is alive. Elemental essence flows through the land, shaping mountains, rivers, forests, and machines alike. Steam hums alongside arcane energies, and every being resonates with primal or hybrid elements that define their power and purpose.</p>
-</section>
+    <!-- CURRENT CONTENT -->
+    <section id="current-content">
+      <h2>🌱 Current Content (v0.0.1)</h2>
+      <p>
+        The game currently includes:
+      </p>
+      <ul>
+        <li><strong>Starting Town:</strong> Home of Morgan and Kaelen, fully mapped with interiors.</li>
+        <li><strong>Forest Path:</strong> Connects the town to the Forest Temple at the giant tree’s center.</li>
+        <li><strong>Basic RTP Resources:</strong> Default RPG Maker MZ assets in use for characters, tilesets, and environment.</li>
+      </ul>
+      <p class="note">
+        Mechanics such as combat, crafting, and class evolution are **planned but not yet implemented**.
+      </p>
+    </section>
 
-<section id="story">
-  <h2>📖 The Story</h2>
-  <p>Two friends, Kaelen and Morgan, once dreamed of greatness. Destiny chose Kaelen as the hero, leaving Morgan lost and forgotten. Years later, darkness rises again, and the forgotten friend must awaken his past to stand beside the chosen one.</p>
-</section>
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <h2>🧬 Planned Features & Roadmap</h2>
+      <p>
+        Core systems and mechanics planned for future versions of <strong>Veldoria</strong> include:
+      </p>
+      <ul>
+        <li><strong>Memory-Recovery Storyline:</strong> Players recover Morgan’s lost memories and uncover Kaelen’s fate.</li>
+        <li><strong>Class Evolution System:</strong> Characters grow from base class → advanced class → unique archetypes.</li>
+        <li><strong>Crafting System:</strong> Use raw materials to forge weapons, armor, and items to aid in survival and exploration.</li>
+        <li><strong>Expanded Map Exploration:</strong> Unlock new towns, forests, dungeons, and the central city as the story progresses.</li>
+        <li><strong>Quest & Dialogue Mechanics:</strong> Interact with NPCs, learn lore, and unlock character backstories.</li>
+        <li><strong>Integration with RTP Assets:</strong> Gradually replace or supplement default assets with custom content as development advances.</li>
+      </ul>
+      <p class="note">
+        Features and systems are highly experimental and may change significantly during development.
+      </p>
+    </section>
 
-<section id="classes">
-  <h2>⚔️ Classes & Evolution</h2>
-  <ul>
-    <li>Soldier → Knight → Paladin / Templar</li>
-    <li>Mage → Caster → Stargazer / Orricant</li>
-    <li>Cleric → Druid → Sporecaller / Mycochant</li>
-    <li>Archer → Machinist → Technomancer / Voltshaper</li>
-    <li>Bard → Musician → Archivist / Fatebinder</li>
-    <li>Tamer → Beastcaller → Summoner / Wilderkin</li>
-  </ul>
-  <p>Each path grows not only in power but in purpose. What you become is shaped by memory, choices, and elemental affinity.</p>
-</section>
+    <!-- LINKS -->
+    <section id="links">
+      <h2>🔗 Links & Resources</h2>
+      <ul>
+        <li><a href="https://github.com/SupGamerNL/Veldoria" target="_blank">GitHub Repository</a> – official source and dev updates</li>
+        <li><a href="https://www.rpgmakerweb.com/" target="_blank">Itch.io Page</a> – game page</li>
+        <li><a href="https://www.rpgmakerweb.com/" target="_blank">RPG Maker Official Website</a> – software reference and community resources</li>
+        <li><a href="https://github.com/SupGamerNL" target="_blank">Developer Profile – SupGamer NL</a></li>
+      </ul>
+    </section>
 
-<section id="dungeons">
-  <h2>🏰 Dungeons</h2>
-  <p>Face the <strong>Temple of the Forgotten Bough</strong>, where roots coil like serpents, ancient stones whisper secrets, and forgotten memories wait to be reclaimed. Survival demands strength, wit, and courage.</p>
-</section>
+    <!-- PLAY -->
+    <section id="play">
+      <h2>🎮 Play Now</h2>
+      <p>Experience the adventure yourself. Clone or download the repository to play the early version of Veldoria:</p>
+      <a href="https://github.com/SupGamerNL/Veldoria" class="button">Download on GitHub</a>
+    </section>
+  </main>
 
-<section id="materials">
-  <h2>🛠️ Crafting & Materials</h2>
-  <p>Forge weapons and armor from materials infused with essence and history: <strong>Sharp Fangs</strong>, <strong>Carapaces</strong>, <strong>Poison Glands</strong>. Every item tells the story of life, death, and survival.</p>
-</section>
-
-<section id="play">
-  <h2>🎮 Play Now</h2>
-  <p>Download or clone this repository to experience the adventure in RPG Maker MZ:</p>
-  <a href="https://github.com/SupGamerNL/Veldoria" class="button">Download on GitHub</a>
-</section>
-
-<footer style="text-align:center; padding:2em; background:#222;">
-  <p>MIT License | © 2025 Veldoria RPG Project</p>
-</footer>
-
+  <footer>
+    <p>© 2025 <a href="https://github.com/SupGamerNL">SupGamer NL</a>. All rights reserved.</p>
+    <p class="version">Current Version: <strong>v0.0.1 (Early Alpha)</strong></p>
+    <p class="status-note">⚠️ Game is under active development. Expect major updates and changes.</p>
+  </footer>
 </body>
 </html>
