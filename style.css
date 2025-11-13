@@ -2,14 +2,20 @@
    Global Body & Typography
    ========================= */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.65;
-  background: linear-gradient(135deg, #1b1b1b 0%, #121212 100%);
-  color: #f0f0f0;
-  margin: 0;
-  padding: 20px;
-  transition: background 0.3s ease;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.65;
+   /* Background image + gradient overlay */
+   background:
+     linear-gradient(rgba(27,27,27,0.85), rgba(18,18,18,0.85)),
+     url('assets/images/background.png') no-repeat center center fixed;
+   background-size: cover; /* Cover the viewport */
+   background-attachment: fixed;
+   color: #f0f0f0;
+   margin: 0;
+   padding: 20px;
+   transition: background 0.3s ease;
 }
+
 
 /* =========================
    Links
@@ -173,7 +179,7 @@ section {
   padding: 2.5em 2em;
   margin: 2em auto;
   max-width: 900px;
-  background: rgba(28,28,28,0.9);
+  background: rgba(28,28,28,0.85);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
